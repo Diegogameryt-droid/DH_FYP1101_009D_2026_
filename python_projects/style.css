@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #1a1a2e 0%, #0f0c1b 100%);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: #00f3ff;
+    text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 30px;
+}
+
+.score-box {
+    background: #161633;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    border: 1px solid #3d3d75;
+    box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+#score { color: #00f3ff; font-weight: bold; }
+#highScore { color: #ff007f; font-weight: bold; }
+
+canvas {
+    background: #050510;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.3);
+    border: 3px solid #00f3ff;
+}
+
+.controls-info {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #8a8ab0;
+    line-height: 1.5;
+}
