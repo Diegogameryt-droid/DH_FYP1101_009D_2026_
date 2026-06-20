@@ -1,0 +1,112 @@
+/* Estilos Generales y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    min-height: screen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Contenedor Principal (Tarjeta) */
+.card-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 24px;
+}
+
+/* Formulario y Selectores */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 6px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1f2937;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Caja de Resultados */
+.resultado-box {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#res-nombre {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+#res-direccion {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+#res-horario {
+    font-size: 12px;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+/* Estados Dinámicos (Se aplican mediante JS) */
+#res-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+/* Clases de utilidad para ocultar/mostrar elementos */
+.hidden {
+    display: none !important;
+}
